@@ -20,6 +20,5 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
   } catch (error) {
     return reply.status(409).send()
   }
-
   return reply.status(201).send()
 }
